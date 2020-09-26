@@ -45,29 +45,20 @@
 extern "C" {
 #endif
 
-//#include "nrf_gpio.h"
-
 #define GPIO(port, pin) ((port << 5) | pin)
-#define PIN1 GPIO(0,8)
-#define PIN2 GPIO(0,11)
-#define PIN5 GPIO(0,18)
-#define PIN6 GPIO(0,16)
-#define PIN7 GPIO(0,19)
-#define PIN8 GPIO(0,20)
-#define PIN9 GPIO(0,22)
-#define PIN10 GPIO(0,23)
-#define PIN11 GPIO(1,0)
-#define PIN12 GPIO(1,3)
-
-#define PIN13 GPIO(0,9)
-#define PIN14 GPIO(0,10)
-#define PIN15 GPIO(1,15)
-#define PIN16 GPIO(1,14)
-#define PIN17 GPIO(0,3)
-#define PIN18 GPIO(0,30)
-#define PIN19 GPIO(0,0)
-#define PIN20 GPIO(0,5)
-//#define NRF_LOG_ENABLED 0
+#define PIN1 GPIO(0,2)
+#define PIN2 GPIO(0,3)
+#define PIN3 GPIO(0,4)
+#define PIN4 GPIO(0,5)
+// cols
+#define PIN5 GPIO(0,27)
+#define PIN6 GPIO(0,30)
+#define PIN7 GPIO(0,31)
+#define PIN8 GPIO(0,11)
+#define PIN9 GPIO(0,7)
+#define PIN10 GPIO(0,15)
+#define PIN11 GPIO(0,16)
+/* //#define NRF_LOG_ENABLED 0 */
 //#define NRF_LOG_BACKEND_SERIAL_USES_UART 0
 //#define NRF_LOG_BACKEND_SERIAL_UART_TX_PIN 5
 #define NRF_LOG_BACKEND_UART_TX_PIN 8
@@ -77,8 +68,8 @@ extern "C" {
 // #define NRF_CLOCK_LFCLKSRC      NRF_CLOCK_LFCLKSRC_XTAL_20_PPM
 #else
 #define NRF_CLOCK_LFCLKSRC      {.source        = NRF_CLOCK_LF_SRC_RC,            \
-                                 .rc_ctiv       = 16,                                \
-                                 .rc_temp_ctiv  = 2,                                \
+                                 .rc_ctiv       = 16,                             \
+                                 .rc_temp_ctiv  = 2,                              \
                                  .xtal_accuracy = 0}
 #endif
 

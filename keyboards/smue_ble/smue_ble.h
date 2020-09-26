@@ -1,5 +1,5 @@
-#ifndef ERGO42_BLE_H_
-#define ERGO42_BLE_H_
+#ifndef SMUE_BLE_H_
+#define SMUE_BLE_H_
 
 #include "quantum.h"
 
@@ -36,4 +36,4 @@
 
 #define LAYOUT LAYOUT_ortho_4x14
 
-#endif /* ERGO42_BLE_H_ */
+#endif /* SMUE_BLE_H_ */
